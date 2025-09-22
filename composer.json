@@ -1,0 +1,62 @@
+{
+    "name": "murtaza1904/avatar-generator",
+    "description": "A simple Laravel package to generate avatar images from user name initials (PNG & SVG).",
+    "keywords": [
+        "laravel",
+        "avatar",
+        "initials",
+        "profile-picture",
+        "generator",
+        "svg",
+        "png"
+    ],
+    "license": "MIT",
+    "version": "1.0.0",
+    "homepage": "https://github.com/murtaza1904/avatar-generator",
+    "support": {
+        "issues": "https://github.com/murtaza1904/avatar-generator/issues",
+        "source": "https://github.com/murtaza1904/avatar-generator"
+    },
+    "authors": [
+        {
+            "name": "Muhammad Murtaza",
+            "email": "contact@muhammadmurtaza.com",
+            "homepage": "https://muhammadmurtaza.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-gd": "*",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "murtaza1904\\AvatarGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "murtaza1904\\AvatarGenerator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "murtaza1904\\AvatarGenerator\\AvatarServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "murtaza1904\\AvatarGenerator\\Facades\\Avatar"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,14 @@
+# Exclude unnecessary files from export (composer install --prefer-dist)
+.gitignore export-ignore
+.gitattributes export-ignore
+phpunit.xml.dist export-ignore
+phpunit.xml export-ignore
+tests/ export-ignore
+docs/ export-ignore
+.github/ export-ignore
+
+# Normalize line endings
+* text=auto eol=lf
+
+# Treat PHP files as text (better diffs)
+*.php text diff=php
